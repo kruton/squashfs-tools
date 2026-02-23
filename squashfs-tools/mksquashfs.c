@@ -8440,8 +8440,8 @@ int main(int argc, char *argv[])
 	 * Streaming is incompatible with the progress bar, percentage output,
 	 * info output to stdout, and summary output
 	 *
-	 * Complain if -force-progress or -percentage have been used, as they
-	 * produce a conflict
+	 * Complain if -force-progress, -percentage or -offset have been used,
+	 * as they produce a conflict
 	 */
 	if(streaming) {
 		if(force_progress)
@@ -8449,6 +8449,9 @@ int main(int argc, char *argv[])
 
 		if(percentage)
 			BAD_ERROR("-stream cannot be used wih -percentage\n");
+
+		if(start_offset)
+			BAD_ERROR("-stream cannot be used with -offset\n");
 
 		/* -info cannot be used, unless it is to a file */
 		if(display_info && !info_file)
