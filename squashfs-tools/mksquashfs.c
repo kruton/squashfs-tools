@@ -8418,6 +8418,10 @@ int main(int argc, char *argv[])
 	if(tarfile && any_actions())
 		BAD_ERROR("Actions are unsupported when reading tar files\n");
 
+	/* If -tar option is set, then the -max-depth option cannot be used */
+	if(tarfile && max_depth_opt)
+		BAD_ERROR("-max-depth is not supported reading tar files\n");
+
 	/* If -tar option is set and there are exclude files (either -ef or -e),
 	 * then -wildcards must be set too.  The older legacy exclude code
 	 * cannot be used with tar files */
