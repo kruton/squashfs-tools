@@ -5218,18 +5218,18 @@ static squashfs_inode no_sources(int progress)
 	struct pseudo *pseudo = get_pseudo();
 
 	if(!pseudo || pseudo->names != 1 || strcmp(pseudo->head->name, "/") != 0) {
-		if(!pseudo_dir) {
-			ERROR_START("Source is \"-\", but no pseudo definition for \"/\"\n");
-			ERROR_EXIT("Did you forget to specify -cpiostyle or -tar?\n");
-			EXIT_MKSQUASHFS();
-		} else
+		if(!pseudo_dir)
+			BAD_ERROR("Source is \"-\", but no pseudo definition "
+				"for \"/\"\nDid you forget to specify "
+				"-cpiostyle or -tar?\n");
+		else
 			pseudo_dev = pseudo_dir;
 	} else if(!pseudo->head->dev) {
-		if(!pseudo_dir) {
-			ERROR_START("Source is \"-\", but only XATTR pseudo definition for \"/\"\n");
-			ERROR_EXIT("Did you forget to specify -cpiostyle or -tar?\n");
-			EXIT_MKSQUASHFS();
-		} else
+		if(!pseudo_dir)
+			BAD_ERROR("Source is \"-\", but only XATTR pseudo "
+				"definition for \"/\"\nDid you forget to "
+				"specify -cpiostyle or -tar?\n");
+		else
 			pseudo_dev = pseudo_dir;
 	} else
 		pseudo_dev = pseudo->head->dev;
