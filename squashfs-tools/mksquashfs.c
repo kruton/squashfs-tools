@@ -898,6 +898,9 @@ static int check_id_table_offset()
 {
 	int i;
 
+	if(uid_gid_offset == 0)
+		return TRUE;
+
 	INFO("Updating id table with -uid-gid-offset value %u", uid_gid_offset);
 
 	for(i = 0; i < id_count; i++) {
