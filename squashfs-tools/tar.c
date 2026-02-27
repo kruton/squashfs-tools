@@ -1799,7 +1799,7 @@ squashfs_inode process_tar_file(int progress)
 	if(root_dir)
 		fixup_tree(root_dir);
 	else
-		root_dir = scan1_opendir("", "", 0);
+		root_dir = scan1_opendir("", "", 1);
 
 	/* Create root directory dir_ent and associated inode, and connect
 	 * it to the root directory dir_info structure */
