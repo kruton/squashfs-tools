@@ -1,7 +1,7 @@
 /*
  * Squashfs
  *
- * Copyright (c) 2024, 2025
+ * Copyright (c) 2024, 2025, 2026
  * Phillip Lougher <phillip@squashfs.org.uk>
  *
  * This program is free software; you can redistribute it and/or
@@ -575,18 +575,18 @@ static char *mksquashfs_text[]={
 	"  1\tFatal errors occurred, Mksquashfs aborted and did not generate a "
 		"filesystem (or update if appending).\n",
 	"\n","See also (extra information elsewhere):", "\n",
-	"The README for the Squashfs-tools 4.7.4 release, describing the "
+	"The README for the Squashfs-tools 4.7.5 release, describing the "
 		"new features can be read here https://github.com/plougher/"
-		"squashfs-tools/blob/master/Documentation/4.7.4/README.md\n",
+		"squashfs-tools/blob/master/Documentation/4.7.5/README.md\n",
 	"\nThe MKSQUASHFS usage guide can be read here https://github.com/"
-		"plougher/squashfs-tools/blob/master/Documentation/4.7.4/"
+		"plougher/squashfs-tools/blob/master/Documentation/4.7.5/"
 		"USAGE-MKSQUASHFS.md\n",
 	"\nThe CHANGELOG for Squashfs tools can be read here "
 		"https://github.com/plougher/squashfs-tools/blob/master/"
 		"CHANGES.md\n",
 	"\nThe ACTIONS-README for the actions subsystem can be read here "
 		"https://github.com/plougher/squashfs-tools/blob/master/"
-		"Documentation/4.7.4/ACTIONS-README.md\n",
+		"Documentation/4.7.5/ACTIONS-README.md\n",
 	NULL
 };
 
