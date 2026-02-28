@@ -894,11 +894,11 @@ static char *sqfstar_text[]={
 	"  1\tFatal errors occurred, Sqfstar aborted and did not generate a "
 		"filesystem.\n",
 	"\n","See also (extra information elsewhere):", "\n",
-	"The README for the Squashfs-tools 4.7.4 release, describing the "
+	"The README for the Squashfs-tools 4.7.5 release, describing the "
 		"new features can be read here https://github.com/plougher/"
-		"squashfs-tools/blob/master/Documentation/4.7.4/README.md\n",
+		"squashfs-tools/blob/master/Documentation/4.7.5/README.md\n",
 	"\nThe Sqfstar usage guide can be read here https://github.com/"
-		"plougher/squashfs-tools/blob/master/Documentation/4.7.4/"
+		"plougher/squashfs-tools/blob/master/Documentation/4.7.5/"
 		"USAGE-SQFSTAR.md\n",
 	"\nThe CHANGELOG for Squashfs tools can be read here "
 		"https://github.com/plougher/squashfs-tools/blob/master/"
