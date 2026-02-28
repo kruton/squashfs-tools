@@ -323,11 +323,11 @@ static char *sqfscat_text[]={
 	"\nSee -ignore-errors, -strict-errors and -no-exit-code options for "
 		"how they affect the exit status.\n",
 	"\n", "See also (extra information elsewhere):", "\n",
-	"The README for the Squashfs-tools 4.7.4 release, describing the new "
+	"The README for the Squashfs-tools 4.7.5 release, describing the new "
 		"features can be read here https://github.com/plougher/"
-		"squashfs-tools/blob/master/Documentation/4.7.4/README.md\n",
+		"squashfs-tools/blob/master/Documentation/4.7.5/README.md\n",
 	"\nThe Sqfscat usage guide can be read here https://github.com/"
-		"plougher/squashfs-tools/blob/master/Documentation/4.7.4/"
+		"plougher/squashfs-tools/blob/master/Documentation/4.7.5/"
 		"USAGE-SQFSCAT.md\n",
 	"\nThe CHANGELOG for Squashfs tools can be read here "
 		"https://github.com/plougher/squashfs-tools/blob/master/"
