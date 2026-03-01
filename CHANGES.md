@@ -50,7 +50,7 @@
 11. Fix BLOCK_READER_THREADS typo in Makefile (Alexandru Ardelean).
 
 
-## 4.7 (03 JUNE 2025): Parallel file reading, new help system, new reproducible filesystem image options, removal of "fragment block stall"
+## 4.7 (03 JUN 2025): Parallel file reading, new help system, new reproducible filesystem image options, removal of "fragment block stall"
 
 1. Mksquashfs now reads files in parallel from the input directories
 
@@ -359,7 +359,7 @@
     7. Unsquashfs, fix sparse file writing when holes are larger than 2^31-1.
     8. Add external CFLAGS and LDFLAGS support to Makefile, and allow build options to be specified on command line.  Also don't over-write passed in CFLAGS definition.
 
-## 4.1 (19 SEPT 2010): Major filesystem and tools improvements
+## 4.1 (19 SEP 2010): Major filesystem and tools improvements
 
 1. Filesystem improvements:
 
@@ -527,7 +527,7 @@ A code optimisation after testing unfortunately broke sorting in Mksquashfs.  Th
 7. Special support for files larger than 256 MB has been added to the Squashfs kernel code for faster read access.
 8. Inode numbers are now stored within the inode rather than being computed from inode location on disk (this is not so much an improvement, but a change forced by the previously listed improvements).
 
-## 2.2-r2 (8 SEPT 2005): Second release of 2.2, this release fixes a couple of small bugs, a couple of small documentation mistakes, and adds a patch for kernel 2.6.13. 
+## 2.2-r2 (8 SEP 2005): Second release of 2.2, this release fixes a couple of small bugs, a couple of small documentation mistakes, and adds a patch for kernel 2.6.13. 
 
 1. Mksquashfs now deletes the output filesystem image file if an error occurs whilst generating the filesystem.  Previously on error the image file was left empty or partially written.
 2. Updated mksquashfs so that it doesn't allow you to generate filesystems with block sizes smaller than 4K.  Squashfs hasn't supported block sizes less than 4K since 2.0-alpha.
@@ -574,7 +574,7 @@ If you're using a 2.6.8 kernel or later then you must use this 2.6.8.1 patch.  I
 
 It is worth mentioning that this kernel bug potentially affects other filesystems.  If you receive odd results with other filesystems you may be experiencing this bug with that filesystem.  I submitted a patch but this has not yet gone into the kernel, hopefully the bug will be fixed in later kernels. 
 
-## 2.0 (13 JULY 2004): A couple of new options, and some bug fixes
+## 2.0 (13 JUL 2004): A couple of new options, and some bug fixes
 
 1. New mksquashfs -all-root, -root-owned, -force-uid, and -force-gid options.  These allow the uids/gids of files in the generated filesystem to be specified, overriding the uids/gids in the source filesystem.
 2. Initrds are now supported for kernels 2.6.x.

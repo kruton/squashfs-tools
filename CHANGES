@@ -78,7 +78,7 @@
 	11. Fix BLOCK_READER_THREADS typo in Makefile (Alexandru Ardelean).
 
 
-4.7	03 JUNE 2025	Parallel file reading, new help system, new
+4.7	03 JUN 2025	Parallel file reading, new help system, new
 			reproducible filesystem image options, removal
 			of "fragment block stall"
 
@@ -568,7 +568,7 @@
 		over-write passed in CFLAGS definition.
 	
 
-4.1	19 SEPT 2010	Major filesystem and tools improvements
+4.1	19 SEP 2010	Major filesystem and tools improvements
 
 	1. Filesystem improvements:
 
@@ -836,7 +836,7 @@
 	   improvement, but a change forced by the previously listed
 	   improvements).
 
-2.2-r2	8 SEPT 2005	Second release of 2.2, this release fixes a couple
+2.2-r2	8 SEP 2005	Second release of 2.2, this release fixes a couple
 			of small bugs, a couple of small documentation
 			mistakes, and adds a patch for kernel 2.6.13. 
 
@@ -931,7 +931,7 @@
 	   I submitted a patch but this has not yet gone into the
 	   kernel, hopefully the bug will be fixed in later kernels. 
 
-2.0	13 JULY 2004	A couple of new options, and some bug fixes
+2.0	13 JUL 2004	A couple of new options, and some bug fixes
 
 	1. New mksquashfs -all-root, -root-owned, -force-uid, and -force-gid
 	   options.  These allow the uids/gids of files in the generated
