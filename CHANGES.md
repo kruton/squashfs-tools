@@ -1,5 +1,29 @@
 # SQUASHFS CHANGE LOG
 
+### 4.7.5 (01 MAR 2026): Bug fix release (mostly)
+
+1. New options & improvements
+    1. Mksquashfs/Sqfstar: new -numeric-owner option which uses the numeric uid and gid in the tarfile rather than the user name or the group name.
+    2. Error messages produced by the date command and symbolic mode parser printed by the pager rather than to stderr.
+
+2. Major bug fixes
+
+    1. Fix possible corruption of Squashfs filesystems if sparse files present (caused by elimination of "fragment block stall" in 4.7).
+    2. Fix pseudo file f/F definition (create file from output of command) when input has greater than a block of contiguous zeros (caused by sparse file reading optimisation in 4.7.3).
+    3. Fix issue where files which are larger than available buffer space will not be found to be a duplicate (caused by elimination of "fragment block stall" in 4.7).
+    4. Fix broken Mksquashfs -max-depth option.
+
+3. Minor bug fixes
+
+    1. Mksquashfs: segmentation fault if no sources and pseudo file definition only defines an Xattr but no metadata.
+    2. Mksquashfs/Sqfstar: -offset should be rejected if -stream option used.
+    3. Mksquashfs: hard links to symbolic links may be ignored (first access to symbolic link after creation).
+    4. Pseudo files: a M (modify with timestamp) definition on a directory causes pseudo file definitions below it in hierarchy to be ignored.
+    5. Pseudo files: a m/M modify definition breaks checks that a directory exists and it is a directory (rather than something else).
+    6. Mksquashfs: -max-depth option marks empty directories as having excluded files.
+    7. Mksquashfs/Sqfstar should produce identical output with only pseudo files.
+    8. define SEEK_DATA if not defined by C library.
+
 ### 4.7.4 (09 NOV 2025): Bug fix release
 
 1. Fix regression introduced by SEEK_DATA optimisation
