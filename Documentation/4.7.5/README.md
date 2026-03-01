@@ -37,14 +37,14 @@ This README has the following sections:
 
 3. Minor bug fixes
 
-    1. Mksquashfs: segmentation fault if no sources and pseudo file definition only defines an Xattr but no metadata.
+    1. Mksquashfs: segmentation fault if no sources and pseudo file root ("/") definition only defines an Xattr but no metadata.
     2. Mksquashfs/Sqfstar: -offset should be rejected if -stream option used.
     3. Mksquashfs: hard links to symbolic links may be ignored (first access to symbolic link after creation).
     4. Pseudo files: a M (modify with timestamp) definition on a directory causes pseudo file definitions below it in hierarchy to be ignored.
     5. Pseudo files: a m/M modify definition breaks checks that a directory exists and it is a directory (rather than something else).
     6. Mksquashfs: -max-depth option marks empty directories as having excluded files.
     7. Mksquashfs/Sqfstar should produce identical output with only pseudo files.
-    8. define SEEK_DATA if not defined by C library.
+    8. Define SEEK_DATA if not defined by C library.
 
 ## 2. IMPROVEMENTS AND BUG FIXES IN 4.7.3 AND 4.7.4
 

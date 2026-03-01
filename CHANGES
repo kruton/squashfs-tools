@@ -26,7 +26,7 @@
 	3. Minor bug fixes
 
 		3.1 Mksquashfs: segmentation fault if no sources and pseudo file
-		    definition only defines an Xattr but no metadata.
+		    root ("/") definition only defines an Xattr but no metadata.
 		3.2 Mksquashfs/Sqfstar: -offset should be rejected if -stream
 		    option used.
 		3.3 Mksquashfs: hard links to symbolic links may be ignored
@@ -41,7 +41,7 @@
 		    having excluded files.
 		3.7 Mksquashfs/Sqfstar should produce identical output with only
 		    pseudo files.
-		3.8 define SEEK_DATA if not defined by C library.
+		3.8 Define SEEK_DATA if not defined by C library.
 
 4.7.4	09 NOV 2025	Bug fix release
 
